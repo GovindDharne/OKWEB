@@ -9,14 +9,14 @@
  use URL;
  use Mail;
 
-class offersdashboardController extends Controller
-{
-	public function getoffersdashboard()
-	{
-		return view('offer-dashboard');
-	}
+class paymentController extends Controller {
+
+
+
+	public function paystatus(){
+
+     return view('user-registration');
+
 }
+	}
 
-
-
-?>

@@ -1,4 +1,4 @@
-<?php
+	<?php
 
 /*
 |--------------------------------------------------------------------------
@@ -19,6 +19,7 @@ Route::get('user-registration','userRegistrationController@Registeruser');
 Route::get('getcities/{stateid}','userRegistrationController@loadcities');
 Route::post('registeruser','userRegistrationController@insertuserdetails');
 Route::post('insertregisteruser','userRegistrationController@insertusermaster');
-Route::post('checklogin','loginController@checklogin');
-Route::get('login','loginController@userlogin');
-Route::get('offer-dashboard','offersdashboardController@getoffersdashboard');
+Route::post('insertoffer','newofferController@offerinsert');
+
+Route::get('createoffer','newofferController@addnewoffer');
+Route::get('paymentstatus','paymentController@paystatus');

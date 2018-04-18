@@ -30,8 +30,6 @@
             <input id="txtname" name="txtname" type="text" class="text-primary form-control" required="" />
         </div>
     </div>
-
-
     <div class="form-group col-md-6">
         <div class="col-md-5">
             <label>Email :</label>

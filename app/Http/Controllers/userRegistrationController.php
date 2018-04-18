@@ -35,9 +35,9 @@ class userRegistrationController extends Controller
  
           $demo = DB::statement('call usp_insert_user_details (?,?,?,?,?)',array(
           $req->txtname,
-          $req->txtemail,
-          $req->txtpassword,
-          $req->txtmobile,          
+          $req->txtemail,          
+          $req->txtpassword, 	 	
+          $req->txtmobile,
           $req->ddlcity,
     ));
 

@@ -32,5 +32,6 @@ class newofferController extends Controller{
 
 
     ));
+          return json_encode($demo);
       }
 }

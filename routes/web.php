@@ -20,6 +20,9 @@ Route::get('getcities/{stateid}','userRegistrationController@loadcities');
 Route::post('registeruser','userRegistrationController@insertuserdetails');
 Route::post('insertregisteruser','userRegistrationController@insertusermaster');
 Route::post('insertoffer','newofferController@offerinsert');
+Route::get('helth_offers','HealthofferController@offerhelth');  
+Route::post('inserthealth','HealthofferController@healthofferinsert');
 
 Route::get('createoffer','newofferController@addnewoffer');
+
 Route::get('paymentstatus','paymentController@paystatus');

@@ -19,12 +19,12 @@
 </head>
 <body>
 
-  <form id="formregistration" name="formregistration" method="POST">
+  <form id="formregistration" name="formregistration"  method="POST">
     {{csrf_field()}}
   <div class="col-md-12" role="navigation">
 <div class="col-md-12">
     <div class="col-md-12 text-center">
-        <h2> H Details</h2> <br><br>
+        <h2> B Details</h2> <br><br>
     </div>
 
     <div class="form-group col-md-6">
@@ -50,11 +50,11 @@
         
      <div class="col-md-6">
         <div class="col-md-5">
-            <label>Branch :</label>
+            <label>Brand :</label>
         </div>
         <div class="form-group col-md-7">
         <select name="hbrid" id="hbrid" class="selectpicker select-opt form-control" required="">
-           <option value="0">Branch id</option>
+           <option value="0">Brand id</option>
              <option value="1">abc</option>
         </select>
         </div>
@@ -140,7 +140,7 @@
 
     <div class="form-group col-md-12">
       <div class="col-md-4">
-       <input type="button" name="hoffsub" id="hoffsub" value="submit" class="btn success">
+       <input type="button" name="Broffsub" id="Broffsub" value="submit" class="btn success">
      </div>
     </div>
 
@@ -159,11 +159,11 @@
    <script type="text/javascript">
      
   $(document).ready(function(){
-      $('#hoffsub').click(function () {
+      $('#Broffsub').click(function () {
       alert('test');
   if ($('#formregistration').valid()){
    $.ajax({ 
-   url: "{{URL::to('inserthealth')}}",
+   url: "{{URL::to('insertbrand')}}",
    method:"POST",
    data: $('#formregistration').serialize(),
    success: function(msg)  

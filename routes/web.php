@@ -23,6 +23,8 @@ Route::post('insertoffer','newofferController@offerinsert');
 Route::get('helth_offers','HealthofferController@offerhelth');  
 Route::post('inserthealth','HealthofferController@healthofferinsert');
 
-Route::get('createoffer','newofferController@addnewoffer');
+Route::get('createoffer','newofferController@addnewoffer'); 
+Route::get('Brandwise_offer','BrandwiseController@allbrand'); 
+Route::post('insertbrand','BrandwiseController@brandwiseinsert');   
 
 Route::get('paymentstatus','paymentController@paystatus');
